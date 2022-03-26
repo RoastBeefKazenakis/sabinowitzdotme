@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "react-datepicker": "^4.7.0",
+    "react-dropzone": "^12.0.4",
+    "react-hook-form": "^7.28.1",
+    "react-hot-toast": "^2.2.0",
+    "react-image-lightbox": "^5.1.4",
+    "react-query": "^3.34.17"
+  },
+  "devDependencies": {
+    "@storybook/addon-postcss": "^2.0.0",
+    "@types/react-datepicker": "^4.3.4",
+    "cypress": "^9.5.2",
+    "inquirer-fuzzy-path": "^2.3.0",
+    "local-cypress": "^1.2.4",
+    "plop": "^3.0.5"
+  },
+  "resolutions": {
+    "webpack": "^5"
+  },
+  "name": "sabinowitz",
+  "version": "1.1.2",
+  "description": "Thomas Sabino-Benowitz English Lessons",
+  "main": "index.tsx",
+  "author": "Thomas Sabino-Benowitz",
+  "license": "Curr",
+  "private": false
+}
