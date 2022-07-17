@@ -28,7 +28,7 @@ export default function HomePage() {
               height='225'
               className='aspect-auto hover:scale-[1.02] hover:shadow-4xl p-30 / drop-shadow duration-200 ease-in'
             />
-            <p className='hover-shadow2xl hover:scale-[1.05] text-shadow-2xl text-slate-100 / font-mono text-5xl subpixel-antialiased duration-200 ease-in select-all'>
+            <p className='hover-shadow2xl text-shadow-2xl text-slate-100 / font-mono text-5xl subpixel-antialiased duration-200 ease-in select-all'>
               {' '}
               designer and  software developer{' '}
             </p>
