@@ -28,9 +28,9 @@ export default function HomePage() {
               height='225'
               className='aspect-auto hover:scale-[1.02] hover:shadow-4xl p-30 / drop-shadow duration-200 ease-in'
             />
-            <p className='hover-shadow2xl hover:scale-[1.05] text-shadow-2xl text-slate-900 / text-5xl font-light duration-200 ease-in select-all'>
+            <p className='hover-shadow2xl hover:scale-[1.05] text-shadow-2xl text-slate-100 / font-mono text-5xl duration-200 ease-in select-all'>
               {' '}
-              design / software{' '}
+              designer and  software developer{' '}
             </p>
             <div className='w-6 h-6' />
             <p className='text-slate-400 / font-mono text-4xl'>
@@ -105,7 +105,7 @@ export default function HomePage() {
               <a href='/pdf/ThomasSabinoBenowitzresume.pdf' download='resume'>
                 <Image
                   src='/images/resumesvg.svg'
-                  className='duration-400 hover:scale-[.96] / inset-4 mx-12 my-12 transition ease-in-out'
+                  className='duration-400 hover:scale-[.98] / inset-4 mx-12 my-12 transition ease-in-out'
                   alt=''
                   width='4000'
                   height='5177'
