@@ -22,7 +22,7 @@ export default function HomePage() {
           <div className='flex flex-col justify-self-center items-center'>
             <div className='w-72 h-72' />
             <Image
-              src='/images/tomname3.png'
+              src='/images/tomlogosveegeee.svg'
               alt='crithead'
               width='1333'
               height='225'
@@ -54,7 +54,7 @@ export default function HomePage() {
               <div>
                 <Link href='/design'>
                   <img
-                    src='/images/designbutton.png'
+                    src='/images/gdbutton.svg'
                     className='duration-400 hover:scale-[1.03] max-w-6 / h-auto shadow-none transition ease-in-out'
                     alt=''
                     width='200'
