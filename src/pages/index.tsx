@@ -1,8 +1,6 @@
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Image from 'next/image';
@@ -37,13 +35,13 @@ export default function HomePage() {
             <div className='w-6 h-6' />
             <p className='text-slate-400 / font-mono text-4xl'>
               {' '}
-              -------------------------------------------{' '}
+              --------------------------------------{' '}
             </p>
             <div className='w-12 h-12' />
 
             <div className='... / flex flex-row space-x-5 h-2'>
               <div>
-                <a href='https://github.com/roastBeefKazenakis/'>
+                <Link href='https://github.com/roastBeefKazenakis/'>
                   <img
                     src='/images/githubbutton.png'
                     className='duration-400 hover:scale-[1.07] max-w-6 / h-auto shadow-none transition ease-in-out'
@@ -51,7 +49,7 @@ export default function HomePage() {
                     width='200'
                     height='200'
                   />
-                </a>
+                </Link>
               </div>
               <div>
                 <Link href='/design'>
@@ -65,18 +63,18 @@ export default function HomePage() {
                 </Link>
               </div>
               <div>
-                <a href='mailto:sabinowitz@gmail.com'>
+                <Link href='mailto:sabinowitz@gmail.com'>
                   <img
                     src='/images/emailbutton.png'
-                    className='duration-400 hover:scale-[1.04] max-w-6 / h-auto shadow-none transition ease-in-out'
+                    className='duration-400 hover:scale-[1.04] max-w-12 / h-auto shadow-none transition ease-in-out'
                     alt=''
                     width='200'
                     height='200'
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href='/ThomasSabinoBenowitzresume.pdf'>
+                <Link href='/pdf/ThomasSabinoBenowitzresume.pdf'>
                   <img
                     src='/images/resumebutton2.png'
                     className='duration-400 hover:scale-[1.11] max-w-6 / h-auto shadow-none transition ease-in-out'
@@ -84,10 +82,10 @@ export default function HomePage() {
                     width='200'
                     height='200'
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href='https://twitter.com/sabinowitz'>
+                <Link href='https://twitter.com/sabinowitz'>
                   <img
                     src='/images/twitterbutton3.png'
                     className='duration-400 hover:scale-[1.06] max-w-6 / h-auto shadow-none transition ease-in-out'
@@ -95,12 +93,23 @@ export default function HomePage() {
                     width='200'
                     height='200'
                   />
-                </a>
+                </Link>
               </div>
             </div>
 
             <div className='w-96 h-96' />
-
+            <p className='text-5xl text-blue-800'>⇩ Resume (scroll down) ⇩</p>
+            <p className='text-2xl text-blue-400'>Click to download PDF</p>
+            <div className='w-8 h-8' />
+            <Link href='/pdf/ThomasSabinoBenowitzresume.pdf'>
+              <Image
+                src='/images/resumesvg.svg'
+                className='duration-400 hover:scale-[.96] / inset-4 mx-12 my-12 transition ease-in-out'
+                alt=''
+                width='4000'
+                height='5177'
+              />
+            </Link>
             <div className='w-96 h-96' />
             <div className='w-96 h-96' />
           </div>
