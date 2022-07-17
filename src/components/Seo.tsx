@@ -5,12 +5,11 @@ import { openGraph } from '@/lib/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Crit.TK',
-  siteName: 'Crit.TK',
-  description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
+  title: 'Sabinowitz.tk',
+  siteName: 'Sabinowitz.TK',
+  description: "Thomas Sabino-Benowitz' personal  page",
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://sabinowitz.tk',
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */

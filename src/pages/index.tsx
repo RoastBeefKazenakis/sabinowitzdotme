@@ -28,7 +28,7 @@ export default function HomePage() {
               height='225'
               className='aspect-auto hover:scale-[1.02] hover:shadow-4xl p-30 / drop-shadow duration-200 ease-in'
             />
-            <p className='hover-shadow2xl hover:scale-[1.05] text-shadow-2xl text-slate-100 / font-mono text-5xl duration-200 ease-in select-all'>
+            <p className='hover-shadow2xl hover:scale-[1.05] text-shadow-2xl text-slate-100 / font-mono text-5xl subpixel-antialiased duration-200 ease-in select-all'>
               {' '}
               designer and  software developer{' '}
             </p>
@@ -99,8 +99,16 @@ export default function HomePage() {
 
             <div className='w-80 h-80' />
             <div className='w-6 h-6' />
-            <p className='text-5xl text-blue-800'>⇩ Resume (scroll down) ⇩</p>
-            <p className='text-2xl text-green-400'>Click to download PDF</p>
+            <p className='text-slate-800 / text-5xl subpixel-antialiased text-opacity-90 animate-bounce'>
+              <span className='text-opacity-35 / text-red-900'>⇩ ⇩ ⇩</span>
+            </p>
+            <p className='text-slate-800 / font-mono text-xl subpixel-antialiased animate-none'>
+              Resume (scroll down)
+            </p>
+            <div className='w-2 h-2' />
+            <p className='text-l text-slate-300 / subpixel-antialiased'>
+              --Click to download PDF--
+            </p>
             <div className='flex flex-auto mx-64 my-16'>
               <a href='/pdf/ThomasSabinoBenowitzresume.pdf' download='resume'>
                 <Image
