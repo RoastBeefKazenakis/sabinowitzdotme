@@ -11,7 +11,6 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import NextImage from '@/components/NextImage';
 import Seo from '@/components/Seo';
-import Skeleton from '@/components/Skeleton';
 
 type Color = typeof colorList[number];
 
@@ -37,7 +36,7 @@ export default function ComponentsPage() {
         >
           <div
             className={clsx(
-              'layout min-h-screen py-20',
+              'layout py-20 min-h-screen',
               mode === 'dark' ? 'text-white' : 'text-black'
             )}
           >
@@ -46,7 +45,7 @@ export default function ComponentsPage() {
               Back to Home
             </ArrowLink>
 
-            <div className='mt-8 flex flex-wrap gap-2'>
+            <div className='flex flex-wrap gap-2 mt-8'>
               <Button
                 onClick={toggleMode}
                 variant={mode === 'dark' ? 'light' : 'dark'}
@@ -71,9 +70,9 @@ export default function ComponentsPage() {
                     className={clsx(
                       'block max-w-xs rounded',
                       mode === 'dark'
-                        ? 'border border-gray-600 bg-dark'
-                        : 'border-gray-300 bg-white',
-                      'focus:border-primary-400 focus:outline-none focus:ring focus:ring-primary-400'
+                        ? 'bg-dark border border-gray-600'
+                        : 'bg-white border-gray-300',
+                      'focus:border-primary-400 focus:ring focus:ring-primary-400 focus:outline-none'
                     )}
                     onChange={(e) => setColor(e.target.value as Color)}
                   >
@@ -88,34 +87,34 @@ export default function ComponentsPage() {
                   </ButtonLink>
                 </div>
                 <div className='flex flex-wrap gap-2 text-xs font-medium'>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-50 text-black'>
+                  <div className='flex justify-center items-center w-10 h-10 text-black bg-primary-50 rounded'>
                     50
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-100 text-black'>
+                  <div className='flex justify-center items-center w-10 h-10 text-black bg-primary-100 rounded'>
                     100
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-200 text-black'>
+                  <div className='flex justify-center items-center w-10 h-10 text-black bg-primary-200 rounded'>
                     200
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-300 text-black'>
+                  <div className='flex justify-center items-center w-10 h-10 text-black bg-primary-300 rounded'>
                     300
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-400 text-black'>
+                  <div className='flex justify-center items-center w-10 h-10 text-black bg-primary-400 rounded'>
                     400
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-500 text-black'>
+                  <div className='flex justify-center items-center w-10 h-10 text-black bg-primary-500 rounded'>
                     500
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-600 text-white'>
+                  <div className='flex justify-center items-center w-10 h-10 text-white bg-primary-600 rounded'>
                     600
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-700 text-white'>
+                  <div className='flex justify-center items-center w-10 h-10 text-white bg-primary-700 rounded'>
                     700
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-800 text-white'>
+                  <div className='flex justify-center items-center w-10 h-10 text-white bg-primary-800 rounded'>
                     800
                   </div>
-                  <div className='flex h-10 w-10 items-center justify-center rounded bg-primary-900 text-white'>
+                  <div className='flex justify-center items-center w-10 h-10 text-white bg-primary-900 rounded'>
                     900
                   </div>
                 </div>
@@ -165,7 +164,7 @@ export default function ComponentsPage() {
                   Useful for indicating navigation, I use this quite a lot, so
                   why not build a component with some whimsy touch?
                 </p>
-                <div className='flex flex-wrap items-center gap-4'>
+                <div className='flex flex-wrap gap-4 items-center'>
                   <ArrowLink href='/' direction='left'>
                     Direction Left
                   </ArrowLink>
@@ -297,19 +296,13 @@ export default function ComponentsPage() {
                   Next Image with default props and skeleton animation
                 </p>
                 <NextImage
-                  className='mt-8'
+                  useSkeleton
+                  className='w-32 md:w-40'
                   src='/favicon/apple-icon-180x180.png'
                   width='180'
                   height='180'
                   alt='Icon'
                 />
-              </li>
-              <li className='space-y-2'>
-                <h2 className='text-lg md:text-xl'>Skeleton</h2>
-                <p className={clsx('!mt-1 text-sm', textColor)}>
-                  Skeleton with shimmer effect
-                </p>
-                <Skeleton className='h-72 w-72' />
               </li>
             </ol>
           </div>
