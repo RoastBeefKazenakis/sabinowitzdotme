@@ -16,6 +16,15 @@ export default function HomePage() {
 
       <main>
         <section className='self-center bg-gradient-to-tr from-cyan-700 via-indigo-400 to-blue-800'>
+          {/* <div className='align-top justify-items-start w-80 h-24'>
+          <Image
+              src='/images/tomname3.png'
+              alt='crithead'
+              width='1000'
+              height='300'
+              className='aspect-auto p-30'
+              />
+            </div> */}
           <div className='flex flex-col justify-self-center items-center'>
             <div className='w-64 h-64' />
             {/* <NextImage

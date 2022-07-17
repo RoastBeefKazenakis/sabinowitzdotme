@@ -33,7 +33,7 @@ export default function HomePage() {
               designer and  software developer{' '}
             </p>
             <div className='w-6 h-6' />
-            <p className='text-slate-400 / font-mono text-4xl'>
+            <p className='text-slate-400 / font-mono text-4xl subpixel-antialiased'>
               {' '}
               --------------------------------------{' '}
             </p>
