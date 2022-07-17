@@ -97,19 +97,21 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className='w-96 h-96' />
+            <div className='w-80 h-80' />
+            <div className='w-6 h-6' />
             <p className='text-5xl text-blue-800'>⇩ Resume (scroll down) ⇩</p>
-            <p className='text-2xl text-blue-400'>Click to download PDF</p>
-            <div className='w-8 h-8' />
-            <a href='/pdf/ThomasSabinoBenowitzresume.pdf' download='resume'>
-              <Image
-                src='/images/resumesvg.svg'
-                className='duration-400 hover:scale-[.96] / inset-4 mx-12 my-12 transition ease-in-out'
-                alt=''
-                width='4000'
-                height='5177'
-              />
-            </a>
+            <p className='text-2xl text-green-400'>Click to download PDF</p>
+            <div className='flex flex-auto mx-64 my-16'>
+              <a href='/pdf/ThomasSabinoBenowitzresume.pdf' download='resume'>
+                <Image
+                  src='/images/resumesvg.svg'
+                  className='duration-400 hover:scale-[.96] / inset-4 mx-12 my-12 transition ease-in-out'
+                  alt=''
+                  width='4000'
+                  height='5177'
+                />
+              </a>
+            </div>
             <div className='w-96 h-96' />
             <div className='w-96 h-96' />
           </div>
