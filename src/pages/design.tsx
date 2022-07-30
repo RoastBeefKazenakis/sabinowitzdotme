@@ -29,7 +29,7 @@ export default function HomePage() {
           <div className='flex flex-col justify-self-center items-center'>
             <NextImage
               useSkeleton
-              className='aspect-auto duration-600 hover:scale-[.99] p-30 / justify-items-center drop-shadow ease-in-out'
+              className='aspect-auto duration-600 hover:scale-[.99] p-30 / justify-items-center drop-shadow ease-in-out md:w-64'
               src='/images/bigdither.svg'
               width='1000'
               height='10000'
