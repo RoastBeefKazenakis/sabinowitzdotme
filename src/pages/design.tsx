@@ -26,7 +26,7 @@ export default function HomePage() {
               className='aspect-auto p-30'
               />
             </div> */}
-          <div className='w-12 h-12' />
+          <div className='h-12' />
           <div className='flex flex-col justify-self-center items-center'>
             <NextImage
               useSkeleton
