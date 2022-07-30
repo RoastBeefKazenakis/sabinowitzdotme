@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import clsx from 'clsx';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Seo from '@/components/Seo';
@@ -26,7 +26,16 @@ export default function HomePage() {
               className='aspect-auto p-30'
               />
             </div> */}
+          <div className='w-12 h-12' />
           <div className='flex flex-col justify-self-center items-center'>
+            <NextImage
+              useSkeleton
+              className='aspect-auto p-30'
+              src='/images/bigdither.svg'
+              width='1000'
+              height='10000'
+              alt='Icon'
+            />
             <div className='w-64 h-64' />
             {/* <NextImage
                   useSkeleton='true'
@@ -36,15 +45,6 @@ export default function HomePage() {
                   height='10000'
                   alt='graphicdesign'
                 /> */}
-
-            <NextImage
-              useSkeleton
-              className='aspect-auto p-30'
-              src='/images/bigdither.svg'
-              width='1000'
-              height='10000'
-              alt='Icon'
-            />
           </div>
 
           <div className='w-96 h-96' />
