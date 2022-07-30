@@ -1,5 +1,4 @@
 import * as React from 'react';
-import clsx from 'clsx';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Seo from '@/components/Seo';
@@ -16,7 +15,7 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='bg-gradient-to-tr from-cyan-700 via-indigo-400 to-blue-800'>
+        <section className='self-center bg-gradient-to-tr from-cyan-700 via-indigo-400 to-blue-800'>
           {/* <div className='align-top justify-items-start w-80 h-24'>
           <Image
               src='/images/tomname3.png'
@@ -30,7 +29,7 @@ export default function HomePage() {
           <div className='flex flex-col justify-self-center items-center'>
             <NextImage
               useSkeleton
-              className='aspect-auto p-30'
+              className='aspect-auto duration-600 hover:scale-[.99] p-30 / justify-items-center drop-shadow ease-in-out'
               src='/images/bigdither.svg'
               width='1000'
               height='10000'
