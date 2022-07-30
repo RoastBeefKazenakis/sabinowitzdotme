@@ -1,8 +1,6 @@
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
-import UnderlineLink from '@/components/links/UnderlineLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
 import Image from 'next/image';
 import Seo from '@/components/Seo';
 import Link from 'next/link';

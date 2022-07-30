@@ -3,6 +3,7 @@ import * as React from 'react';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Seo from '@/components/Seo';
+import NextImage from '@/components/NextImage';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -36,12 +37,13 @@ export default function HomePage() {
                   alt='graphicdesign'
                 /> */}
 
-            <Image
+            <NextImage
+              useSkeleton
+              className='aspect-auto p-30'
               src='/images/bigdither.svg'
-              alt='crithead'
               width='1000'
               height='10000'
-              className='aspect-auto p-30'
+              alt='Icon'
             />
           </div>
 
