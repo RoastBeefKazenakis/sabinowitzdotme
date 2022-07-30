@@ -16,7 +16,7 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='self-center bg-gradient-to-tr from-cyan-700 via-indigo-400 to-blue-800'>
+        <section className='bg-gradient-to-tr from-cyan-700 via-indigo-400 to-blue-800'>
           {/* <div className='align-top justify-items-start w-80 h-24'>
           <Image
               src='/images/tomname3.png'
